@@ -13,7 +13,7 @@ jobs:
     - uses: actions/checkout@755da8c3cf115ac066823e79a1e1788f8940201b  # v3.2.0
 
     - name: Build and deploy
-      uses: AhsanAyaz/angular-deploy-gh-pages-actions@0e4f1a953d00116ca38fbf1bcdb37f91923015ef  # v1.3.2
+      uses: AhsanAyaz/angular-deploy-gh-pages-actions@2272ef32f364bc80d8680ee03d8e58f126156c31  # v1.4.0
       with:
         github_access_token: ${{ secrets.GITHUB_TOKEN }}
         build_configuration: production
