@@ -3,14 +3,16 @@
 	"image": "mcr.microsoft.com/devcontainers/typescript-node:3.0.3-22",
 	"features": {
 		"ghcr.io/devcontainers-extra/features/act:1.0.15": {},
+		"ghcr.io/devcontainers-extra/features/pre-commit:2.0.18": {},
+		"ghcr.io/devcontainers-extra/features/shellcheck:1.0.0": {},
+		"ghcr.io/devcontainers-extra/features/uv:1.0.0": {},
 		"ghcr.io/devcontainers/features/github-cli:1.0.15": {},
-		"ghcr.io/devcontainers-contrib/features/pre-commit:2.0.17": {}
 	},
 	"postCreateCommand": {
-		"Initialize pre-commit environment": "nohup sh -c 'pre-commit install -f --install-hooks &' < /dev/null > /dev/null 2>&1"
+		"Initialize pre-commit environment": "nohup sh -c 'pre-commit install -f --install-hooks &' < /dev/null > /dev/null 2>&1",
+		"Enable corepack": "sudo corepack enable"
 	},
 	"waitFor": "onCreateCommand",
-	"updateContentCommand": "yarn",
 	"customizations": {
 		"vscode": {
 			"extensions": [

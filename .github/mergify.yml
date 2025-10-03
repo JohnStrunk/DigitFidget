@@ -6,6 +6,7 @@ queue_rules:
       - or:
           - author=JohnStrunk
           - author=renovate-bot
+          - author=dependabot[bot]
           - "#approved-reviews-by>=1"
       - "#changes-requested-reviews-by=0"
       - label!=do-not-merge

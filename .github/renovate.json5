@@ -19,6 +19,16 @@
   },
   "packageRules": [
     {
+      "description": "Pin devcontainer image digests",
+      "matchManagers": [
+        "devcontainer"
+      ],
+      "matchDepTypes": [
+        "image"
+      ],
+      "pinDigests": true
+    },
+    {
       // Features can be pinned, but they don't support the standard :tag@sha256
       // syntax. It's just one or the other.
       // See: https://github.com/devcontainers/cli/issues/825
@@ -41,6 +51,9 @@
       ]
     }
   ],
+  "prConcurrentLimit": 15,
+  "prHourlyLimit": 0,
+  "rebaseWhen": "auto",
   // "schedule": ["before 7am on Tuesday"],
   "semanticCommits": "disabled",
   "timezone": "America/New_York"
