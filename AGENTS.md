@@ -57,6 +57,7 @@ assistant when working on this repository.
 - **Rule010**: All package management must be handled via `yarn`. Do not use
    `npm` for installing, updating, or removing dependencies in this
    repository.
+- **Rule011**: Do not commit any changes to git.
 
 ## Code Structure
 
