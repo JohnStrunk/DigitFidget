@@ -6,7 +6,7 @@ import GameScreen from "./GameScreen";
 function setupSolvedGame(size = 4) {
     // Render GameScreen with a solved board by simulating cell toggles
     render(
-        <MemoryRouter initialEntries={[`game?difficulty=${String(size)}`]}>
+        <MemoryRouter initialEntries={[`/game?difficulty=${String(size)}`]}>
             <GameScreen />
         </MemoryRouter>
     );
